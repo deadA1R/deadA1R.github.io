@@ -4,103 +4,103 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0, user-scale=0">
     <title>#your.IT/News</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="shortcut icon" href="image/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/804a094108.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f477db86cf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="wrapper">
       <!---   Header --->
       <header>
         <div class="conteiner">
-          <div class="header_content">
-            <div class="bblock">
-              <div class="logo">
-                <a href="index.html"><h1>#your.IT</h1>
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="index.html">
+                  <img src="image/nav_icon.png" width="35" height="35" class="d-inline-block align-top" alt="">
+                  <strong>#your IT</strong>
                 </a>
-              </div>
-            </div>
-            <div class="bblock">
-              <menu>
-                <div class="">
-                </div>
-                <div class="nav">
-                  <ul>
-                    <li><a href="#"><strong>News</strong></a></li>
-                    <li><a href="index_dev.html"><strong>Development</strong></a></li>
-                    <li><a href="index_games.html"><strong>Games</strong></a></li>
-                    <li><a href="index_movie.html"><strong>Movie</strong></a></li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><strong>News</strong></a></li>
+                    <li class="nav-item "><a class="nav-link" href="index_dev.html"><strong>Development</strong></a></li>
+                    <li class="nav-item "><a class="nav-link" href="index_games.html"><strong>Games</strong></a></li>
+                    <li class="nav-item "><a class="nav-link" href="index_movie.html"><strong>Movie</strong></a></li>
                   </ul>
+                  <button type="button" name="button" class="btn btn-light">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                  </button>
                 </div>
-                <div class="">
-                </div>
-              </menu>
-            </div>
-            <div class="bblock">
-              <p> <i class="fas fa-search"></i> </p>
-            </div>
+              </nav>
           </div>
-        </div>
       </header>
       <!---  MAIN  --->
-      <main>
+      <section>
+        <div class="box_1">
+          <span><strong>News</strong></span>
+        </div>
+      </section>
+      <main id="title">
         <div class="conteiner">
-          <div class="main_content">
-            <div class="box_1">
-              <span><strong>News</strong></span>
-            </div>
-            <div class="box_2" id="block">
+          <div class="row row-cols-2">
+            <div class="col">
               <a href="#">
-                <div class="type_2">
-                  <img src="image/news/n_2.png" alt="">
-                  <h2><span>"Problem 2022": Microsoft Exchange servers are not delivering mail</span></h2>
-                  <h4><span>World, IT &nbsp &#176; &nbsp <em>2/01/2021 </em></span></h4>
-                </div>
-              </a>
-              <a href="#">
-              <div class="type_2">
-                <img src="image/news/n_1.jpg" alt="">
-                <h2><span>Google Pay in Kazakhstan</span></h2>
-                <h4><span>Kazakhstan, IT &nbsp &#176; &nbsp <em> 7/12/2021 </em></span></h4>
-              </div>
-            </a>
+            <div class="type_2 bg-color">
+              <img src="image/news/n_2.png" alt="">
+              <div class="carousel-caption d-md-block">
+                <h4>"Problem 2022": Microsoft Exchange servers are not delivering mail</h4>
+                <h6>World, IT &nbsp &#176; &nbsp <em>2/01/2021 </em></h6>
             </div>
-            <div class="box_3" id="block">
-                <a href="#">
-              <div class="type_3">
+            </div>
+          </a></div>
+            <div class="col">
+              <a href="#">
+              <div class="type_2 bg-color">
                 <img src="image/news/n_3.jpg" alt="">
-                <h2><span>Tesla will recall more than 475 thousand electric vehicles</span></h2>
-                <h4><span>World, Tesla &nbsp &#176; &nbsp <em>30/12/2021 </em></span></h4>
+                <div class="carousel-caption d-md-block">
+                  <h4>Tesla will recall more than 475 thousand electric vehicles</h4>
+                  <h6>World, Tesla &nbsp &#176; &nbsp <em>30/12/2021 </em></h6>
               </div>
-            </a>
-            <a href="#">
-              <div class="type_3">
-                <img src="image/news/n_4.jpg" alt="">
-                <h2><span>Samsung has secured a patent for &nbsp&nbsp&nbsp its new smartphone with 2 hinges</span></h2>
-                <h4><span>IT, Samsung &nbsp &#176; &nbsp <em>27/12/2021 </em></span></h4>
-              </div>
-            </a>
-              <a href="#">
-              <div class="type_3">
-                <img src="image/news/n_5.jpg" alt="">
-                <h2><span>Details about Android 12</span></h2>
-                <h4><span>IT &nbsp &#176; &nbsp <em>26/12/2021 </em></span></h4>
               </div>
             </a>
             </div>
-            <div class="box_2" id="block">
+            <div class="col">
               <a href="#">
-              <div class="type_2">
-                <img src="image/ex_p.png" alt="">
-                <h2><span>Untitled</span></h2>
-                <h4><span>Type info &nbsp &#176; &nbsp <em>Data </em></span></h4>
+              <div class="type_2 bg-color">
+                <img src="image/news/n_4.jpg" alt="">
+                <div class="carousel-caption d-md-block">
+                  <h4>Samsung has secured a patent for &nbsp&nbsp&nbsp its new smartphone with 2 hinges</h4>
+                  <h6>IT, Samsung &nbsp &#176; &nbsp <em>27/12/2021 </em></h6>
+              </div>
               </div>
             </a>
+            </div>
+            <div class="col">
               <a href="#">
-              <div class="type_2">
-                <img src="image/ex_p.png" alt="">
-                <h2><span>Untitled</span></h2>
-                <h4><span>Type info &nbsp &#176; &nbsp <em>Data </em></span></h4>
+              <div class="type_2 bg-color">
+                <img src="image/news/n_5.jpg" alt="">
+                <div class="carousel-caption d-md-block">
+                  <h4>Details about Android 12</h4>
+                  <h6>IT &nbsp &#176; &nbsp <em>26/12/2021 </em></h6>
+              </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-12">
+              <a href="#">
+              <div class="type_2 bg-color">
+                <img src="image/news/n_1.jpg" alt="">
+                <div class="carousel-caption d-md-block">
+                  <h4>Google Pay in Kazakhstan</h4>
+                  <h6>Kazakhstan, IT &nbsp &#176; &nbsp <em> 7/12/2021 </em></h6>
+              </div>
               </div>
             </a>
             </div>
@@ -110,20 +110,19 @@
       <!---  Block SHOW MORE   --->
       <section>
         <div class="add_more">
-          <p>Show more</p>
-          <img src="https://img.icons8.com/material-outlined/24/000000/down--v1.png"/>
+          <p>Show&nbspmore</p>
         </div>
       </section>
       <!---  Footer   --->
       <footer>
-        <div class="conteiner">
-          <div id="footer_content">
-            <div class="f_c_1">
-              <h1>#your.IT</h1>
-              <h3>A place where you can find all the new IT-related news. Programming languages, Web development, or just news. <em>It's all with us!</em></h3>
+        <div class="conteiner" >
+          <div class="row row-cols-3">
+            <div class="col-4 f_c_1">
+              <h1><strong>#your IT</strong></h1>
+              <h3 >We tell you about the most interesting news in the world of technology.</h3>
             </div>
-            <div class="f_c_1">
-              <h2>About project</h2>
+            <div class="col-2 f_c_1">
+              <h3>About project</h3>
               <div class="footer_nav">
                 <ul>
                   <li><a href="#"><h4>Creators</h4></a></li>
@@ -133,8 +132,8 @@
                 </ul>
               </div>
             </div>
-            <div class="f_c_1">
-              <h2>Chat</h2>
+            <div class="col-2 f_c_1">
+              <h3>Chat</h3>
               <div class="footer_nav">
                 <ul>
                   <li><a href="#"><h4>General chat</h4></a></li>
@@ -142,12 +141,18 @@
                 </ul>
               </div>
             </div>
-            <div class="f_c_1">
-                <h2>Contact Us</h2>
-                <form class="send_us">
-                  <input type="email" placeholder="Email...">
-                  <textarea rows="3" placeholder="Message..."></textarea>
-                  <button type="button" name="button">Send Message</button>
+            <div class="col f_c_1">
+                <h3>Contact Us</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your text</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-outline-success btn-block">Send message</button>
                 </form>
             </div>
           </div>
