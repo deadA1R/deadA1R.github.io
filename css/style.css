@@ -26,7 +26,9 @@
     margin-top: 20px;
   }
 }
-
+.wrapper{
+  height: auto;
+}
 
 /* -- MAIN CSS CODE--  */
 body{
@@ -190,6 +192,7 @@ header button{
 /* MAIN */
 main {
   background-color: #fafafa;
+  visibility: visible;
 }
 
 main .conteiner{
@@ -248,6 +251,9 @@ main .conteiner{
 }
 
 /*-------- Title block in pages ---------*/
+#nameblock{
+  visibility: visible;
+}
 .box_1{
   text-align: center;
   font-size: 25pt;
@@ -255,6 +261,7 @@ main .conteiner{
   margin: 0 auto;
   margin-top: 2em;
   overflow: hidden;
+  visibility: visible;
 }
 
 .box_1 span{
@@ -317,6 +324,7 @@ main .conteiner{
 
 .podcast{
   background-color: #363636 ;
+  visibility: visible;
 }
 
 .podcast img{
@@ -363,6 +371,7 @@ section .conteiner{
 
 #features{
   text-align: center;
+  visibility: visible;
 }
 .card{
   box-shadow: 0px 4px 2px rgba(0,0,0,0.05),
