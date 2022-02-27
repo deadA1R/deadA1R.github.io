@@ -26,9 +26,13 @@
     margin-top: 20px;
   }
 }
+<<<<<<< HEAD
 .wrapper{
   height: auto;
 }
+=======
+
+>>>>>>> f360eed3da9cad69adcb92143cafb2ab1d5e9937
 
 /* -- MAIN CSS CODE--  */
 body{
@@ -162,10 +166,17 @@ header button{
 }
 .nav-icon-8.close span:nth-child(1){
   top: 0px;
+<<<<<<< HEAD
 }
 .nav-icon-8.close span:nth-child(2){
   top:12px;
 }
+=======
+}
+.nav-icon-8.close span:nth-child(2){
+  top:12px;
+}
+>>>>>>> f360eed3da9cad69adcb92143cafb2ab1d5e9937
 .nav-icon-8.close span:nth-child(3){
   top: 24px;
 }
@@ -192,7 +203,10 @@ header button{
 /* MAIN */
 main {
   background-color: #fafafa;
+<<<<<<< HEAD
   visibility: visible;
+=======
+>>>>>>> f360eed3da9cad69adcb92143cafb2ab1d5e9937
 }
 
 main .conteiner{
@@ -324,7 +338,10 @@ main .conteiner{
 
 .podcast{
   background-color: #363636 ;
+<<<<<<< HEAD
   visibility: visible;
+=======
+>>>>>>> f360eed3da9cad69adcb92143cafb2ab1d5e9937
 }
 
 .podcast img{
