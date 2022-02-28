@@ -1,4 +1,6 @@
-const news_1 = {
+var arrayArticle = [];
+
+arrayArticle[0] = {
   title: "&#34;Problem 2022&#34;: Microsoft Exchange servers are not delivering mail",
   data: "<em>2/01/2021 </em>",
   type: "World, IT",
@@ -13,7 +15,7 @@ const news_1 = {
   }
 };
 
-const game_1 = {
+arrayArticle[2] = {
   title: "Epic Games users can pick up the Tomb Raider: Trilogy collection for free",
   data: "<em>30/12/2021 </em>",
   type: "Free Games",
@@ -28,7 +30,7 @@ const game_1 = {
   }
 };
 
-const movie_1 = {
+arrayArticle[1] = {
   title: "Metacritic rated the best films",
   data: "<em>31/12/2021 </em>",
   type: "Rating, 2021",
@@ -43,29 +45,67 @@ const movie_1 = {
   }
 };
 
-anews1();
 
-function anews1() {
-  document.getElementById("myImage").src = news_1.image;
-  document.getElementById("articleTitle").innerHTML = news_1.title;
-  document.getElementById("articleType").innerHTML = news_1.inputSubtitle();
-  document.getElementById("SubTitle").innerHTML = news_1.subtitle;
-  document.getElementById("articleText").innerHTML = news_1.article;
+var imageHTML = document.getElementById("myImage");
+var titleA = document.getElementById("articleTitle");
+var typeA = document.getElementById("articleType");
+var subTitle = document.getElementById("SubTitle");
+var textA = document.getElementById("articleText");
+var n = 0;
 
+function offArticle() {
+  document.querySelector('.block-1').style.display = "block";
+  document.querySelector('.block-2').style.display = "none";
+  document.location.href = "#top";
 }
 
-function agame1() {
-  document.getElementById("myImage").src = game_1.image;
-  document.getElementById("articleTitle").innerHTML = game_1.title;
-  document.getElementById("articleType").innerHTML = game_1.inputSubtitle();
-  document.getElementById("SubTitle").innerHTML = game_1.subtitle;
-  document.getElementById("articleText").innerHTML = game_1.article;
+function onArticle() {
+  document.querySelector('.block-1').style.display = "none";
+  document.querySelector('.block-2').style.display = "block";
+  document.location.href = "#top";
 }
 
-function amov1() {
-  document.getElementById("myImage").src = movie_1.image;
-  document.getElementById("articleTitle").innerHTML = movie_1.title;
-  document.getElementById("articleType").innerHTML = movie_1.inputSubtitle();
-  document.getElementById("SubTitle").innerHTML = movie_1.subtitle;
-  document.getElementById("articleText").innerHTML = movie_1.article;
+function openArticle(number){
+    n = 0;
+    imageHTML.src = arrayArticle[number].image;
+    titleA.innerHTML = arrayArticle[number].title;
+    typeA.innerHTML = arrayArticle[number].inputSubtitle();
+    subTitle.innerHTML = arrayArticle[number].subtitle;
+    textA.innerHTML = arrayArticle[number].article;
+    n = number;
+    onArticle();
 }
+
+function nextArticle() {
+  document.location.href = "#top";
+  if (n < arrayArticle.length - 1){
+    n++;
+    imageHTML.src = arrayArticle[n].image;
+    titleA.innerHTML = arrayArticle[n].title;
+    typeA.innerHTML = arrayArticle[n].inputSubtitle();
+    subTitle.innerHTML = arrayArticle[n].subtitle;
+    textA.innerHTML = arrayArticle[n].article;
+  }
+}
+function backArticle() {
+  document.location.href = "#top";
+  if (n > 0){
+    n--;
+    imageHTML.src = arrayArticle[n].image;
+    titleA.innerHTML = arrayArticle[n].title;
+    typeA.innerHTML = arrayArticle[n].inputSubtitle();
+    subTitle.innerHTML = arrayArticle[n].subtitle;
+    textA.innerHTML = arrayArticle[n].article;
+  }
+}
+
+document.addEventListener('keypress', (e) => {
+  switch (e.key) {
+    case ")":
+      nextArticle();
+      break;
+    case "(":
+      backArticle();
+      break;
+  }
+});

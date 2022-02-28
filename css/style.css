@@ -41,6 +41,10 @@ body{
   margin: auto;
   padding: 0px 15px;
   }
+
+.block-1{
+  display: contents;
+}
 /*--Sidebar--*/
 
 .sidenav {
@@ -69,13 +73,6 @@ body{
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
 
 .icon-menu{
   font-size: 30px;
@@ -118,7 +115,7 @@ header .conteiner{
 }
 
 nav img{
-  border-radius: 25%;
+  border-radius: 50px;
 }
 
 .btn-light{
@@ -133,14 +130,14 @@ header button{
   padding: 0 35px 25px 0;
 }
 /* nav-icon*/
-.nav-icon-8{
+.nav-icon{
   margin: 0;
   width: 25px;
   cursor: pointer;
   position: relative;
   display: inline-block;
 }
-.nav-icon-8 span{
+.nav-icon span{
   background-color:#000;
   position: absolute;
   border-radius: 2px;
@@ -148,47 +145,47 @@ header button{
   width:100%;
   height: 3px;
 }
-.nav-icon-8 span:nth-child(1){
+.nav-icon span:nth-child(1){
   top:0px;
   left: 0px;
 }
-.nav-icon-8 span:nth-child(2){
+.nav-icon span:nth-child(2){
   top:12px;
   left: 0px;
 }
-.nav-icon-8 span:nth-child(3){
+.nav-icon span:nth-child(3){
   top: 24px;
   left: 0px;
 }
-.nav-icon-8.close span:nth-child(1){
+.nav-icon.close span:nth-child(1){
   top: 0px;
 }
-.nav-icon-8.close span:nth-child(2){
+.nav-icon.close span:nth-child(2){
   top:12px;
 }
 }
-.nav-icon-8.close span:nth-child(2){
+.nav-icon.close span:nth-child(2){
   top:12px;
 }
-.nav-icon-8.close span:nth-child(3){
+.nav-icon.close span:nth-child(3){
   top: 24px;
 }
-.nav-icon-8:not(.open):hover span:nth-child(1){
+.nav-icon:not(.open):hover span:nth-child(1){
   transform: scaleX(.8);
 }
-.nav-icon-8:not(.open):hover span:nth-child(2){
+.nav-icon:not(.open):hover span:nth-child(2){
   transform: scaleX(.5);
 }
-.nav-icon-8:not(.open):hover span:nth-child(3){
+.nav-icon:not(.open):hover span:nth-child(3){
   transform: scaleX(.8);
 }
-.nav-icon-8.open span:nth-child(1){
+.nav-icon.open span:nth-child(1){
   top: 12px;
 }
-.nav-icon-8.open span:nth-child(2){
+.nav-icon.open span:nth-child(2){
   top:12px;
 }
-.nav-icon-8.open span:nth-child(3){
+.nav-icon.open span:nth-child(3){
   top: 12px;
 }
 
@@ -241,7 +238,7 @@ main .conteiner{
  .type_1 img, .type_1, .type_2 img, .type_2, .type_3 img, .type_3{
   width: 100%;
   height: 350px;
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 
@@ -428,21 +425,14 @@ section .conteiner{
 }
 /*-------Testimonials-------------*/
 #testimonials{
-  background: #F0F0F0;
-  padding: 1em 0 3em 0;
-  text-align: center;
+  padding: 0.5em 0 1em 0;
 }
 #testimonials .conteiner{
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
-#testimonials .testimonials-img{
-  width: 8%;
-  border-radius: 100%;
-  margin: 20px;
-}
+
 #testimonials .carousel-item{
-  padding: 7% 15%;
-  height: 400px;
+  padding: 4% 7%;
 }
 
 /*------------ Footer ------------*/
