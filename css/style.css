@@ -25,6 +25,11 @@
   footer .col{
     margin-top: 20px;
   }
+
+  #article h1{
+    font-size: 22pt;
+  }
+
 }
 
 @media (max-width:767px){
