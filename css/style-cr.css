@@ -3,11 +3,25 @@
   #testimonials .col-4, #testimonials .col-8{
     min-width: 100%;
   }
-
   #testimonials .col-text{
     padding: 0em 3em 0em 0em;
   }
+}
 
+@media (max-width:900px) {
+  #testimonials .col-img{
+    left: auto;
+  }
+}
+
+#testimonials{
+  padding: 0.5em 2em 1em 0;
+
+}
+
+#testimonials .conteiner{
+  border-radius: 5px;
+  padding: 2em 0 2em 0;
 }
 
 #testimonials img{
@@ -16,24 +30,18 @@
   height: 300px;
 }
 
-@media (max-width:900px) {
-  #testimonials .col-img{
-    left: auto;
-  }
-
-}
-
 #testimonials .col-img{
    width:320px; height:320px;
    position: relative;
-   left: 25%;
+   margin-left: auto;
+   margin-right: auto;
    border-radius: 50%;
    padding: 10px;
    background-color: #FFFFFA;
    box-shadow: 0px 0px 100px -30px rgba(0, 0, 0, 0.17);
 }
 #testimonials .col-text{
-  padding: 3em 3em 3em 8em;
+  padding: 3em 3em 3em 5em;
 }
 
 .pName{

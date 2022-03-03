@@ -12,9 +12,58 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="cls-mod">&times;</span>
+        <div class="sign-up">
+        <h3>Sign Up</h3>
+        <br>
+        <form>
+          <div class="form-group">
+            <label>Login:</label>
+            <input type="text" class="form-control " id="inputLogin" placeholder="Enter login..." value="">
+          </div>
+          <div class="form-group">
+            <label>Password:</label>
+            <input class="form-control" type="password" id="inputPassword" placeholder="Enter password...">
+          </div>
+          <button type="button" id="button_signup"class="btn btn-outline-success btn-block">Sign Up</button>
+        </form>
+        <br>
+        <button id="button-toRegistr" class="btn btn-link">Register.</button></p>
+        </div>
+        <div class="form-registration">
+          <h3>Registration</h3>
+          <br>
+          <form>
+            <div class="form-group">
+              <label>Login:</label>
+              <input type="text" class="form-control " id="regLogin" placeholder="Enter login..." value="">
+            </div>
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="email" class="form-control " id="regEmail" placeholder="Enter Email..." value="">
+            </div>
+            <div class="form-group">
+              <label>Password:</label>
+              <input class="form-control" type="password" id="regPassword" placeholder="Enter password...">
+            </div>
+            <div class="form-group">
+              <label>Return password:</label>
+              <input class="form-control" type="password" id="retRegPassword" placeholder="Return password...">
+            </div>
+            <button type="button" id="button_reg" class="btn btn-outline-success btn-block">Registration</button>
+          </form>
+          <br>
+          <button id="button-Auth" class="btn btn-link">Log in to your account</button>
+        </div>
+      </div>
+
+    </div>
     <div id="warning">
       <p><strong>Attention!</strong> Enter E-mail and your message</p>
     </div>
@@ -30,6 +79,23 @@
       <a class="nav-link" href="index_dev.html"><strong>Development</strong></a>
       <a class="nav-link" href="index_games.html"><strong>Games</strong></a></li>
       <a class="nav-link" href="index_movie.html"><strong>Movie</strong></a></li>
+      <div class="sidebar-btn">
+        <button class="btn btn-dark dm-dtn" id="dark-mode-sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+          </svg>
+        </button>
+        <button class="btn btn-dark dm-dtn" id="registr-sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+          </svg>
+        </button>
+        <button type="button" name="button" class="btn btn-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        </button>
+      </div>
     </div>
     <!---   Header --->
     <header>
@@ -53,6 +119,16 @@
                   <li class="nav-item "><a class="nav-link" href="index_games.html"><strong>Games</strong></a></li>
                   <li class="nav-item "><a class="nav-link" href="index_movie.html"><strong>Movie</strong></a></li>
                 </ul>
+                <button class="btn btn-light dm-dtn" id="dark-mode">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                  </svg>
+                </button>
+                <button class="btn btn-light dm-dtn" id="registr">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                  </svg>
+                </button>
                 <button type="button" name="button" class="btn btn-light">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -65,8 +141,8 @@
     <!-- Testimonials -->
     <section id="testimonials">
       <div class="conteiner">
-            <div onclick="God(0)">
-              <div class="row">
+            <div>
+              <div class="row" onclick="God(0)">
                 <div class="col-4">
                   <div class="col-img">
                     <img src="image\photo_rec.jpg" alt="">
@@ -96,7 +172,7 @@
               <ul>
                 <li><a href="#"><h4>Creators</h4></a></li>
                 <li><a href="#"><h4>Reviews</h4></a></li>
-                <li><a href="#"><h4>Platform Rules</h4></a></li>
+                <li><a href="index_rule.html"><h4>Platform Rules</h4></a></li>
                 <li><a href="#"><h4>Additional information</h4></a></li>
               </ul>
             </div>
