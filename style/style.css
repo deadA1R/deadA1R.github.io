@@ -2,11 +2,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (max-width: 768px){
+
+    .crd-title{
+        font-size: 25px !important;
+        height: auto !important;
+        text-align: center !important;
+        width: 300px !important;
+    }
+
+    .crd-p{
+        width: 250px !important;
+        height: auto !important;
+        font-size: 20px !important;
+        line-height: 31px !important;
+    }
+
+    .abt-title{
+        margin-bottom: 1.5em !important;
+        font-size: 25px !important;
+        line-height: 20px !important;
+    }
+
+    .abt-block{
+        padding: 0.75em !important;
+    }
+
+    .abt-block-2{
+        padding: 2em !important;
+    }
+
+    .abt-p{
+        font-size: 20px !important;
+        margin-bottom: 1em !important;
+    }
     
+    .abt-p-2{
+        font-size: 16px !important;
+        line-height: 130% !important;
+    }
+
+    .abt-btn{
+        padding: 2em 0 !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-column-gap: 0px !important;
+        grid-row-gap: 1em !important;
+    }
+
+    footer{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .f-div-2{
+        display: none !important;
+    }
+
+    .f-div-3{
+        display: block !important;
+        width: 200px !important;
+    }
+
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 
     .hero-photo{
         width: 300px;
@@ -18,61 +79,6 @@
     .f-div-3{
         display: block !important;
         width: 200px;
-    }
-
-}
-
-@media (max-width: 768px){
-
-    .crd-title{
-        font-size: 25px;
-        width: 200px;
-    }
-
-    .crd-p{
-        width: 180px;
-        height: auto;
-        font-size: 20px;
-        line-height: 31px;
-    }
-
-    .abt-title{
-        margin-bottom: 1.5em;
-        font-size: 25px;
-        line-height: 20px;
-    }
-
-    .abt-block{
-        padding: 0.75em;
-    }
-
-    .abt-block-2{
-        padding: 2em;
-    }
-
-    .abt-p{
-        font-size: 20px;
-        margin-bottom: 1em;
-    }
-    
-    .abt-p-2{
-        font-size: 16px;
-        line-height: 120%;
-    }
-
-    .abt-btn{
-        padding: 2em 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 1em;
-    }
-
-    footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
 }
