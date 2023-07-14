@@ -14,4 +14,11 @@ function sendMessage() {
     window.location.href = "https://wa.me/" + phoneNumber + "?text=" + message;
   }
 
+  var modal = document.getElementById('contact');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
   

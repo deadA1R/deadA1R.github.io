@@ -10,6 +10,22 @@
 </head>
 <body>
 
+  <div id="contact" class="modal">
+    <span onclick="document.getElementById('contact').style.display='none'" class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+      <div class="modal-prt">
+        <div class="modal-text">
+          <p class="modal-p-title"> Наши Контакты</p>
+          <p class="modal-p">Написать на WhatsApp</p>
+        </div>
+        <button onclick="sendMessage()" type="button" class="btn btn-custom-7 text-color-3">+7-(777)-777-77-77</button>
+        <button onclick="sendMessage()" type="button" class="btn btn-custom-7 text-color-3">+7-(777)-777-77-77</button>
+      </div>
+    </form>
+  </div>
+
     <header class="p-3  text-white">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -57,6 +73,7 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 menu">
               <li><a href="#about" class="nav-link px-2 text-color-1 menu-hover">ПРО НАС</a></li>
               <li><a href="#card" class="nav-link px-2 text-color-1 menu-hover">ПРЕИМУЩЕСТВА</a></li>
+              <li><button onclick="document.getElementById('contact').style.display='block'" class="nav-link px-2 text-color-1 menu-hover btn-custom-5">Контакты</button></li>
             </ul>
     
             <div class="text-end">
@@ -68,13 +85,16 @@
 
   <section id="main" class="p-3">
     <div class="container">
+      <div class="main-line">
         <svg xmlns="http://www.w3.org/2000/svg" width="195" height="1" viewBox="0 0 195 1" fill="none">
             <line opacity="0.2" y1="0.5" x2="195" y2="0.5" stroke="#201F1F"/>
         </svg>
+        <p>Поможем в любой момент</p>
+      </div>
         <div class="row ">
             <div class="col-md-6 hero-block">
                 <h1 class="main-text">Эвакуатор<br>В Астане</h1>
-                <p class="p-text">Сломалась машина? Не беда! Скажите где вы, и мы<br>приедем в течение <b>20 минут</b></p>
+                <p class="p-text">Сломалась машина? Не беда! Скажите где вы, и мы приедем в течение <b>20 минут</b></p>
                 <div class="hero-btn">
                     <button onclick="makeCall()" type="button" class="btn btn-custom-2 text-color-2">Позвонить</button>
                     <button onclick="sendMessage()" type="button" class="btn btn-custom-3 text-color-3">Написать на WHATSAPP</button>
@@ -194,7 +214,7 @@
             <b>Надежность, оперативность и качество обслуживания</b> - вот основные принципы, которыми мы руководствуемся в своей работе. Вы можете полностью доверить нам эвакуацию вашего автомобиля и быть уверенными в том, что мы сделаем все возможное, чтобы выполнить задачу эффективно и без проблем. Обратитесь к нам для эвакуации автомобиля любой сложности, и мы гарантируем вам высокий уровень сервиса и полное удовлетворение ваших потребностей.</p>
         </div>
         <div class="abt-btn">
-          <button onclick="makeCall()" type="button" class="btn btn-custom-2 text-color-2">Позвонить</button>
+          <button onclick="makeCall()" type="button" class="btn btn-custom-6 text-color-2">Позвонить</button>
           <button onclick="sendMessage()" type="button" class="btn btn-custom-4 text-color-4">WHATSAPP</button>
         </div>
       </div>
@@ -203,7 +223,7 @@
 
   <footer>
     <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center footer-block">
+      <div class="d-flex flex-wrap justify-content-around align-items-center footer-block">
         <div href="/" class="d-flex align-items-center mb-2 mb-lg-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="139" height="48" viewBox="0 0 139 48" fill="none">
             <line x1="100.33" y1="6.27173" x2="100.33" y2="32.7778" stroke="white" stroke-width="2"/>
@@ -251,7 +271,7 @@
             <ul class="nav col-md-4 justify-content-end">
               <li class="nav-item"><a href="#about" class="nav-link footer-link">Про Нас</a></li>
               <li class="nav-item"><a href="#card" class="nav-link footer-link">Преимущества</a></li>
-              <li class="nav-item"><a href="#card" class="nav-link footer-link">Контакты</a></li>
+              <li class="nav-item"><button onclick="document.getElementById('contact').style.display='block'" class="nav-link footer-link btn-custom-5">Контакты</button></li>
             </ul>
       </div>
       <hr>
