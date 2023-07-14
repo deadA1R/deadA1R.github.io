@@ -13,3 +13,5 @@ function sendMessage() {
     var message = encodeURIComponent("Здравствуйте, у меня сломалась машина. Помогите мне!");
     window.location.href = "https://wa.me/" + phoneNumber + "?text=" + message;
   }
+
+  
