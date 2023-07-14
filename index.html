@@ -95,10 +95,10 @@
                 </div>
             </div>
             <div class="hero-photo">
-                <div class="img-wrapper">
+                <div class="img-wrapper img-w-1">
                   <img src="static/tow_truck.jpg" alt="Описание изображения 1" class="img_1">
                 </div>
-                <div class="img-wrapper">
+                <div class="img-wrapper img-w-2" id="img-2">
                   <img src="static/tow_truck_2.jpg" alt="Описание изображения 1" class="img_2">
                 </div>
                 
@@ -250,10 +250,10 @@
             <path d="M62.9561 16.12C62.8871 16.6678 63.2754 17.1691 63.8234 17.2397C64.3713 17.3104 64.8714 16.9236 64.9404 16.3758L62.9561 16.12ZM61.3873 8.4986C61.539 8.54705 62.1186 8.88993 62.5786 10.0817C63.0291 11.2485 63.3285 13.1613 62.9561 16.12L64.9404 16.3758C65.3405 13.1967 65.0477 10.9301 64.4441 9.36632C63.85 7.82736 62.9135 6.88819 61.9902 6.59344L61.3873 8.4986Z" fill="white"/>
           </svg>
           <p class="footer-p">AutoSpas</p>
-          </div>
-          <div>
+        </div>
+        <div class="f-div-2">
             <p class="footer-p-2">© <span id="year"></span> AUTOSPAS All Rights Reserved.</p>
-          </div>
+        </div>
             <ul class="nav col-md-4 justify-content-end">
               <li class="nav-item"><a href="#about" class="nav-link footer-link">Про Нас</a></li>
               <li class="nav-item"><a href="#card" class="nav-link footer-link">Преимущества</a></li>
@@ -261,9 +261,24 @@
             </ul>
       </div>
       <hr>
+      <div class="f-div-3">
+        <p class="footer-p-2">© 2023 AUTOSPAS All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
-
+  <script>
+    function checkWindowSize() {
+    var windowWidth = window.innerWidth;
+  
+    if (windowWidth <= 1400) {
+ 
+      var element = document.getElementById("img-2");
+      element.parentNode.removeChild(element);
+    }
+  }
+  
+  window.addEventListener("resize", checkWindowSize);
+  </script>
   <script src="script/script.js"></script>
 </body>
 </html>
